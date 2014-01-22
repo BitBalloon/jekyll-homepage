@@ -1,0 +1,5 @@
+permalink: /blog/:year/:month/:day/:title
+encoding: utf-8
+markdown: redcarpet
+excerpt_separator: "<!-- excerpt -->"
+relative_permalinks: false

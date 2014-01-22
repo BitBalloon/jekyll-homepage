@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width">
+
+  <title>{{page.title}}</title>
+
+  {% if page.description %}
+    <meta name="description" content="{{page.description}}">
+  {% else %}
+    <meta name="description" content="The fastest, simplest HTML5 hosting platform on the planet">
+  {% endif %}
+
+
+  {% if page.image %}
+    <meta property="og:image" content="{{page.image}}">
+  {% else %}
+    <meta property="og:image" content="http://5c4cf848f6454dc02ec8-c49fe7e7355d384845270f4a7a0a7aa1.r53.cf2.rackcdn.com/36e8c018-1228-4717-a0e9-028457741552/balloonbot.png"/>
+  {% endif %}
+
+  {% css_asset_tag global %}
+  - /_assets/css/normalize.css
+  - /_assets/css/site.css.scss
+  {% endcss_asset_tag %}
+
+</head>
+<body class="{{page.class}}">
+  <script>
+  (function() { var i = document.createElement("input"); i.setAttribute("type", "file"); if (i.webkitEntries) { document.body.classList.add("folder-support"); }
+  })();
+  </script>
+  <header>
+    <div class="row">
+      <div class="large-5 medium-7 columns">
+        <h1 class="brand"><i class="icon-balloon"></i><a href="/"><img class="logo" src="/img/bitballoon-logo.svg" alt="BitBalloon logo"/></a></h1>
+        <div class="claim">Hosting for your HTML5 sites &amp; apps</div>
+      </div>
+      <div class="large-7 medium-5 columns">
+        <nav>
+          <ul class="inline-list inline-blocks right main-nav">
+            <li class="navlink"><a href="/features">Features</a></li>
+            <li class="navlink"><a href="/pricing">Pricing</a></li>
+            <li class="navlink"><a href="/blog">Blog</a></li>
+            <li class="navlink"><a href="/docs">Documentation</a></li>
+            <li>
+              <div class="auth">
+                <a href="#" id="login-button" class="login-button">Sign in</a>
+                <div class="dropdown login-dropdown">
+                  <a href="#" id="logout-button" class="dropdown-trigger user-name">Logged in</a>
+                  <ul>
+                    <li><a href="/sites">Your sites</a></li>
+                    <li><a href="#" class="logout-button">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>

@@ -1,0 +1,18 @@
+$tooltip-font-weight: 200;
+$tooltip-font-size: 14px;
+
+$flex-video-padding-top: 0;
+$flex-video-margin-bottom: 1em;
+$flex-video-widescreen-padding-bottom: 56.2%;
+
+@import "_assets/foundation/scss/foundation.scss";
+
+@import "_assets/css/medium_grid.scss";
+@import "_assets/css/prettify.scss";
+@import "_assets/css/fonts.scss";
+@import "_assets/css/mixins.scss";
+@import "_assets/css/global.scss";
+@import "_assets/css/main.scss";
+@import "_assets/css/mobile.scss";
+
+

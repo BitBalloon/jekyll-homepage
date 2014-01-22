@@ -1,0 +1,42 @@
+---
+layout: default
+title: BitBalloon - The Blog
+---
+<div class="main blog">
+  <section class="sheet">
+    <div class="row">
+
+      <div class="columns large-12 ">
+
+        <div class="posts">
+
+          {% for post in site.posts %}
+          <article>
+            <header>
+              <h2 class="entry-title text-center"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+              <p class="entry-meta">
+                Written by {{ post.author }} on
+                <time class="updated" datetime="{{ post.date }}" pubdate>{{ post.date | date_to_long_string }}</time>
+              </p>
+            </header>
+
+            <div class="entry-content">
+              <hr/>
+              {{ post.excerpt }}
+
+              <div>
+                <a href="{{ post.url }}" class="more">More &raquo;</a>
+              </div>
+
+            </div>
+
+          </article>
+          {% endfor %}
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
